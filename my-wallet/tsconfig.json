@@ -1,0 +1,26 @@
+{
+  "extends": "plasmo/templates/tsconfig.base",
+  "exclude": [
+    "node_modules"
+  ],
+//   "include": [
+//     ".plasmo/index.d.ts",
+//     "./**/*.ts",
+//     "./**/*.tsx"
+// , "../tailwind.config.ts"  ],
+"include": [
+    ".plasmo/index.d.ts",
+    "./**/*.ts",
+    "./**/*.tsx",
+    "global.d.ts"
+  ],
+  "compilerOptions": {
+    "jsx": "react",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "baseUrl": "."
+  }
+}
